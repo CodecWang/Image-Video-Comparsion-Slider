@@ -1,0 +1,127 @@
+body {
+  background: #0e0e0e;
+}
+
+@media screen and (orientation: portrait) {
+
+  /* 竖屏 */
+  .player-container {
+      position: relative;
+      width: 90vw;
+      height: 42vw;
+      margin: auto;
+  }
+
+  .video-self {
+      width: 90vw;
+      height: 42vw;
+  }
+
+  .player-tip {
+      position: absolute;
+      bottom: 0px;
+      color: #D9DAE4;
+      font-size: 3em;
+      z-index: 3;
+	  opacity: 0.5;
+	  -moz-user-select: none; 
+	  -o-user-select:none; 
+	  -khtml-user-select:none; 
+	  -webkit-user-select:none; 
+	  -ms-user-select:none; 
+	  user-select:none;
+  }
+}
+
+@media screen and (orientation: landscape) {
+
+  /* 横屏 */
+  .player-container {
+      position: relative;
+      width: 960px;
+      height: 448px;
+      margin: auto;
+  }
+
+  .video-self {
+      width: 960px;
+      height: 448px;
+  }
+
+  .player-tip {
+      position: absolute;
+      bottom: 0px;
+      color: #D9DaE4;
+      font-size: 5em;
+      z-index: 3;
+	  opacity: 0.5;
+	  -moz-user-select: none; 
+	  -o-user-select:none; 
+	  -khtml-user-select:none; 
+	  -webkit-user-select:none; 
+	  -ms-user-select:none; 
+	  user-select:none;
+  }
+}
+
+.component-title {
+	color: #D9DAE4;
+	font-size: 3em;
+	font-weight: 600;
+}
+
+.component-tips {
+	color: #898A88;
+	font-size: 0.6em;
+	margin-top: 5px;
+	font-style: italic;
+}
+
+.player-video {
+	position: absolute;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.compare-slider {
+	width: 8px;
+	height: 100%;
+	z-index: 99;
+	position: absolute;
+	cursor: col-resize;
+	background: #3D6DCF;
+	border: 1px solid #207C90;
+}
+
+
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+	0%,
+	100% {
+		transform: rotate(0)
+	}
+
+	20%,
+	60% {
+		transform: rotate(-25deg)
+	}
+
+	40%,
+	80% {
+		transform: rotate(10deg)
+	}
+}
+
+@media (max-width:500px) {
+	.github-corner:hover .octo-arm {
+		animation: none
+	}
+
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out
+	}
+}
